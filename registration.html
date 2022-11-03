@@ -16,53 +16,62 @@
     <div class="signup_layout">
         <form action="#">
 
-            <h1 class="signup_formc">Join Us</h1>
+            <h1 class="signup_massege">Join Us</h1>
 
-            <div class="fname_lname_container">
-                <label for="fname" class="signup_fname_lable">First name</label>
-                <input type="text" class="signup_fname_input" id="fname" name="fname"
-                    placeholder="Enter your First name..." required>
+            <section class="signup fname_lname_container">
+                <div class="fname_container">
+                    <label for="fname" class="signup fname_label">First name</label>
+                    <input type="text" class="signup fname_input" id="fname" name="fname" required>
+                </div>
 
-                <label for="lname" class="signup_lname_lable">Last name</label>
-                <input type="text" class="signup_lname_input" id="lname" name="lname"
-                    placeholder="Enter your Last name..." required>
-            </div>
+                <div class="lname_container">
+                    <label for="lname" class="signup lname_label">Last name</label>
+                    <input type="text" class="signup lname_input" id="lname" name="lname" required>
+                </div>
+            </section>
 
-            <div class="signup_email_container">
+            <section class="signup email_container">
+                <div class="email-container">
+                    <label for="email" class="signup email_label">Email</label>
+                    <input type="email" class="signup email_input" id="email" name="email" required>
+                </div>
+            </section>
 
-                <label for="email" class="signup_email_lable">Email</label>
-                <input type="email" class="signup_email_input" id="email" name="email" placeholder="qr_ss@hotmail.com"
-                    required>
+            <section class="signup username_container">
+                <div class="username-container">
+                    <label for="username" class="signup username_label">Username</label>
+                    <input type="text" class="signup username_input" id="username" name="username" required>
+                </div>
+            </section>
 
-            </div>
+            <section class="signup password-container">
 
-            <div class="signup_username_container">
+                <div class="pass_container">
+                    <label for="password1" class="signup password_label">Password</label>
+                    <input type="password" class="signup password_input" id="password1" name="password1" minlength="6"
+                        maxlength="30" required>
+                </div>
 
-                <label for="username" class="signup_username_lable">Username</label>
-                <input type="text" class="signup_username_input" id="username" name="username" required>
+                <div class="repass_container">
+                    <label for="password2" class="signup repassword_label">Confirm password</label>
+                    <input type="password" class="signup repassword_input" id="password2" name="password2" minlength="6"
+                        maxlength="30" required>
+                </div>
+            </section>
 
-            </div>
+            <section class="signup reset_submit_container">
+                <div class="reset_submit-container">
+                    <input type="reset" class="signup reset" placeholder="Reset">
+                    <button type="submit" class="signup submit">Register</button>
+                </div>
+            </section>
 
-            <div class="signup_password_container">
-
-                <label for="password1" class="signup_password_lable">Password</label>
-                <input type="password" class="signup_password_input" id="password1" name="password1"
-                    placeholder="Password" minlength="6" maxlength="30" required>
-
-                <label for="password2" class="signup_repassword_lable">Confirm password</label>
-                <input type="password" class="signup_repassword_input" id="password2" name="password2"
-                    placeholder="Confirm the password" minlength="6" maxlength="30" required>
-
-            </div>
-
-            <div class="signup_reset_submit_container">
-
-                <input type="reset" class="signup_reset">
-                <button type="submit" class="signup_submit">Register</button>
-
-            </div>
-
+            <section class="signup_foter">
+                <a href="index.html">Already have an account?</a>
+            </section>
             
+
+
 
         </form>
     </div>

@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Kaushan+Script&family=Lobster+Two:wght@700&family=Nixie+One&family=Rammetto+One&family=Trispace:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 *,
 *::after,
@@ -14,6 +15,138 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 :root {
@@ -100,7 +233,7 @@ input.login_password {
     background-color: rgba(255, 255, 255, 0.2);
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 .my_container {
@@ -275,6 +408,11 @@ input.login_password {
         font-size: 2vh;
     }
 
+    input.login_user,
+    input.login_password {
+        font-size: 1vh;
+    }
+
     .login_footer ul li a {
         font-size: 1.7vh;
     }
@@ -369,18 +507,276 @@ input.login_password {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(image/michael-fousert-lE5-z4nTCTQ-unsplash.jpg); */
+    background-image: url(image/b2.jpg);
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     background-size: cover;
 }
 
-.signup_layout {
+.signup {
+    margin: 3% auto 3% 0;
+}
+
+.signup_layout form {
     width: 35vw;
     height: 75vh;
     display: flex;
-    justify-content: center;
-    border: 0px solid rgb(95, 55, 55);
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 6px solid rgb(95, 55, 55);
     background-color: var(--color2);
     border-radius: 1px;
+}
+
+.signup_massege {
+    font-size: 4vw;
+    font-family: 'Handlee', cursive;
+    margin: 8% auto;
+    color: var(--color1);
+
+}
+
+.signup.fname_lname_container,
+.signup.password-container,
+.signup.email_container,
+.signup.username_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fname_container,
+.lname_container,
+.pass_container,
+.repass_container,
+.email-container,
+.username-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 1%;
+}
+
+.signup.fname_label,
+.signup.lname_label,
+.signup.password_label,
+.signup.repassword_label,
+.signup.email_label,
+.signup.username_label {
+    font-size: 1.1vw;
+    font-family: 'Trispace', sans-serif;
+    margin: 0;
+    color: var(--color1);
+}
+
+.signup.fname_input,
+.signup.lname_input,
+.signup.email_input,
+.signup.username_input,
+.signup.password_input,
+.signup.repassword_input {
+    margin: 0;
+    font-size: 1.2vw;
+    text-align: center;
+    border: 0px solid var(--color2);
+    border-radius: 10px;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.signup.reset_submit_container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.reset_submit-container {
+    width: 50%;
+    display: flex;
+    height: 50%;
+}
+
+.signup.reset,
+.signup.submit {
+    margin: 5% 10%;
+    border: 1px solid var(--color1);
+    flex-grow: 1;
+    font-size: 1vw;
+    font-family: 'Trispace', sans-serif;
+    color: var(--color1);
+    background-color: #ffffff00;
+    transition: 0.6s;
+}
+
+.signup_foter a {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8vw;
+    color: var(--color1);
+    font-family: 'Rammetto One', cursive;
+    text-decoration: none;
+}
+
+.signup.fname_input:focus,
+.signup.lname_input:focus,
+.signup.email_input:focus,
+.signup.username_input:focus,
+.signup.password_input:focus,
+.signup.repassword_input:focus {
+    opacity: 0.8;
+}
+
+.signup.fname_input:focus:invalid,
+.signup.lname_input:focus:invalid,
+.signup.email_input:focus:invalid,
+.signup.username_input:focus:invalid,
+.signup.password_input:focus:invalid,
+.signup.repassword_input:focus:invalid {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.signup.reset:hover,
+.signup.submit:hover {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .signup_layout form {
+        width: 65vw;
+        height: 75vh;
+    }
+
+    .signup_massege {
+        font-size: 10vw;
+    }
+
+    .signup.fname_label,
+    .signup.lname_label,
+    .signup.password_label,
+    .signup.repassword_label,
+    .signup.email_label,
+    .signup.username_label {
+        font-size: 2.2vw;
+    }
+
+    .signup.fname_input,
+    .signup.lname_input,
+    .signup.email_input,
+    .signup.username_input,
+    .signup.password_input,
+    .signup.repassword_input {
+        font-size: 2.4vw;
+    }
+
+    .signup.reset,
+    .signup.submit {
+        font-size: 2vw;
+        max-height: 45%;
+    }
+
+    .signup_foter a {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .signup_layout form {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .signup_massege {
+        font-size: 10vw;
+    }
+
+    .signup.fname_label,
+    .signup.lname_label,
+    .signup.password_label,
+    .signup.repassword_label,
+    .signup.email_label,
+    .signup.username_label {
+        font-size: 4vw;
+    }
+
+    .signup.fname_input,
+    .signup.lname_input,
+    .signup.email_input,
+    .signup.username_input,
+    .signup.password_input,
+    .signup.repassword_input {
+        font-size: 5vw;
+    }
+
+    .signup.reset,
+    .signup.submit {
+        font-size: 4vw;
+        max-height: 6vw;
+    }
+
+    .signup_foter a {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-height:800px) {
+    .signup_layout form {
+        width: 80vw;
+        height: 90vh;
+    }
+
+    .signup_massege {
+        font-size: 10vh;
+        margin: 2% 0 0 0;
+    }
+
+    .signup.fname_label,
+    .signup.lname_label,
+    .signup.password_label,
+    .signup.repassword_label,
+    .signup.email_label,
+    .signup.username_label {
+        font-size: 4vh;
+    }
+
+    .signup.fname_lname_container,
+    .signup.email_container,
+    .signup.username_container,
+    .signup.password-container,
+    .signup.reset_submit_container {
+        margin: 0.5%;
+    }
+
+    .signup.fname_input,
+    .signup.lname_input,
+    .signup.email_input,
+    .signup.username_input,
+    .signup.password_input,
+    .signup.repassword_input {
+        font-size: 4vh;
+    }
+
+    .signup.reset_submit-container {
+        height: 10vh;
+    }
+
+    .signup.reset,
+    .signup.submit {
+        font-size: 4vh;
+        height: 40vh;
+
+    }
+
+    .signup_foter a {
+        font-size: 3vh;
+    }
+
 }
