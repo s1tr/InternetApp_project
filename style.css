@@ -203,6 +203,7 @@ table {
     margin: 5% 5%;
     font-size: 4rem;
     font-family: 'Trispace', sans-serif;
+    text-transform: uppercase;
     /* text-shadow: 2px 5px 6px #000000; */
     color: var(--color1);
 
@@ -381,26 +382,25 @@ input.login_password {
     .login_layout {
         width: 35%;
         height: 75%;
-        transition: all 1s;
     }
 
     .login_logo {
         width: 15vh;
         height: 15vh;
         margin: 2% auto;
-        transition: all 1s;
+        transition: all 0.4s;
     }
 
     .login_logo .bi {
         font-size: 10vh;
         color: var(--color1);
-        transition: all 1s;
+        transition: all 0.4s;
     }
 
     .login_figcaption {
         font-size: 5vh;
         margin: auto;
-        transition: all 1s;
+        transition: all 0.4s;
     }
 
     label.login_user,
@@ -531,9 +531,10 @@ input.login_password {
 
 .signup_massege {
     font-size: 4vw;
-    font-family: 'Handlee', cursive;
+    font-family: 'Trispace', sans-serif;
     margin: 8% auto;
     color: var(--color1);
+    text-transform: uppercase;
 
 }
 
@@ -604,6 +605,7 @@ input.login_password {
 .signup.reset,
 .signup.submit {
     margin: 5% 10%;
+    padding: 1.5%;
     border: 1px solid var(--color1);
     flex-grow: 1;
     font-size: 1vw;
@@ -648,7 +650,7 @@ input.login_password {
 
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
     .signup_layout form {
         width: 65vw;
         height: 75vh;
@@ -691,7 +693,7 @@ input.login_password {
 
     .signup_layout form {
         width: 90vw;
-        height: 50vh;
+        height: 60vh;
     }
 
     .signup_massege {
@@ -704,7 +706,7 @@ input.login_password {
     .signup.repassword_label,
     .signup.email_label,
     .signup.username_label {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .signup.fname_input,
@@ -713,7 +715,7 @@ input.login_password {
     .signup.username_input,
     .signup.password_input,
     .signup.repassword_input {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .signup.reset,
@@ -727,15 +729,15 @@ input.login_password {
     }
 }
 
-@media screen and (max-height:800px) {
+@media screen and (max-height:1100px) {
     .signup_layout form {
-        width: 80vw;
-        height: 90vh;
+        width: 35vw;
+        height: 75vh;
     }
 
     .signup_massege {
         font-size: 10vh;
-        margin: 2% 0 0 0;
+        margin: 10% 0 0 0;
     }
 
     .signup.fname_label,
@@ -744,7 +746,7 @@ input.login_password {
     .signup.repassword_label,
     .signup.email_label,
     .signup.username_label {
-        font-size: 4vh;
+        font-size: 2.5vh;
     }
 
     .signup.fname_lname_container,
@@ -752,7 +754,7 @@ input.login_password {
     .signup.username_container,
     .signup.password-container,
     .signup.reset_submit_container {
-        margin: 0.5%;
+        margin: 2%;
     }
 
     .signup.fname_input,
@@ -761,22 +763,24 @@ input.login_password {
     .signup.username_input,
     .signup.password_input,
     .signup.repassword_input {
-        font-size: 4vh;
+        font-size: 2.5vh;
     }
 
-    .signup.reset_submit-container {
-        height: 10vh;
+    .signup.reset_submit_container {
+        height: 5vw;
     }
 
     .signup.reset,
-    .signup.submit {
-        font-size: 4vh;
-        height: 40vh;
+    .signup.submit,
+    .reset_submit-container {
+        font-size: 70%;
+        height: 100%;
 
     }
 
     .signup_foter a {
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
 }
+
