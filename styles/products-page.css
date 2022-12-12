@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Rajdhani:300,regular,500,600,700);
+
+:root {
+     --bg-color: #222222;
+     --card-bg: #d4d4d4;
+     --card-font-color: #111111;
+     --card-img: url("https://images.unsplash.com/photo-1610375233775-6e0166927193?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80")
+}
+
+
+html,
+body {
+     background: 0;
+     background-color: var(--bg-color);
+     overflow: auto;
+}
+
+
+header {
+     background-color: var(--bg-color);
+     z-index: 3;
+}
+
+
+main {
+     z-index: -1 !important;
+     background-color: var(--bg-color);
+}
+
+p {
+     color: var(--card-font-color);
+}
+
+.row {
+     justify-content: center;
+}
+
+.card {
+     --bs-card-border-width: 0 !important;
+     width: 23rem;
+     padding: 0;
+}
+
+.card-img {
+     border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
+     min-height: 23vh;
+     max-height: 23vh;
+}
+
+.info-container {
+
+     padding: 10% 0;
+     display: grid;
+     grid-template-rows: repeat(4, 10%);
+     gap: 1rem;
+
+}
+
+
+
+.icons {
+     border-bottom: 2px solid black;
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+
+}
+
+.title-icon {
+     color: black;
+     font-size: 1.5rem;
+}
+
+.info,
+.infos {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     align-items: flex-end;
+}
+
+.infos {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1rem;
+     align-items: center;
+     justify-content: center;
+}
+
+.info {
+     gap: 0.4rem;
+     display: flex;
+     align-items: center;
+     font-size: 1.3rem;
+
+     font-family: 'rajdhani', monospace;
+
+
+}
+
+.info-text {
+     padding: 0;
+     margin: 0;
+     font-size: 1rem;
+}
+
+.info-text,
+.icon {
+     color: var(--bg-color);
+}
+
+
+.icon {
+     font-size: 1.3rem;
+}
+
+.icon:hover {
+     color: black !important;
+}
+
+.apt-location,
+.apt-name,
+.apt-price {
+     display: flex;
+     gap: 0.5rem;
+     align-items: center;
+
+}
+
+.apt-name p {
+     font-size: 1rem;
+}
+
+.apt-price p {
+     font-size: 1.6rem;
+
+}
+
+.location-tag {
+     font-size: 1.4rem;
+     color: #636363;
+     margin: 0;
+}
+
+
+
+
+
+
+
+.bookBtn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.bookNowBtn {
+     color: var(--card-font-color);
+     font-family: 'Lobster', cursive;
+     font-size: 2rem !important;
+     --link-hover-color: #000000;
+}
+
+
+@media screen and (max-width:1000px) {
+     .card {
+          width: 25rem;
+     }
+}
+
+@media screen and (max-width:500px) {
+
+     .card {
+          width: 80%;
+     }
+
+}
+
+@media screen and (max-height:500px) {
+     .card-img {
+          max-height: 50vh;
+     }
+}
