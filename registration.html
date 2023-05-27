@@ -1,81 +1,117 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-    <link rel="stylesheet" href="style.css">
-
-
-</head>
-
-
-
-<body class="page2">
-
+  <body class="page2">
     <div class="signup_layout">
-        <form action="#">
+      <form action="#" method="post">
+        <h1 class="signup_massege">Join Us</h1>
 
-            <h1 class="signup_massege">Join Us</h1>
+        <section class="signup fname_lname_container">
+          <div class="fname_container">
+            <label for="fname" class="signup fname_label">First name</label>
+            <input
+              oninput="nameValidation(this)"
+              type="text"
+              class="signup fname_input"
+              id="0"
+              name="fname"
+              required
+            />
+          </div>
 
-            <section class="signup fname_lname_container">
-                <div class="fname_container">
-                    <label for="fname" class="signup fname_label">First name</label>
-                    <input type="text" class="signup fname_input" id="fname" name="fname" required>
-                </div>
+          <div class="lname_container">
+            <label for="lname" class="signup lname_label">Last name</label>
 
-                <div class="lname_container">
-                    <label for="lname" class="signup lname_label">Last name</label>
-                    <input type="text" class="signup lname_input" id="lname" name="lname" required>
-                </div>
-            </section>
+            <input
+              oninput="nameValidation(this)"
+              type="text"
+              class="signup lname_input"
+              id="1"
+              name="lname"
+              required
+            />
+          </div>
+        </section>
 
-            <section class="signup email_container">
-                <div class="email-container">
-                    <label for="email" class="signup email_label">Email</label>
-                    <input type="email" class="signup email_input" id="email" name="email" required>
-                </div>
-            </section>
+        <section class="signup email_container">
+          <div class="email-container">
+            <label for="email" class="signup email_label">Email</label>
+            <input
+              oninput="validateEmail(this)"
+              type="email"
+              class="signup email_input"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+        </section>
 
-            <section class="signup username_container">
-                <div class="username-container">
-                    <label for="username" class="signup username_label">Username</label>
-                    <input type="text" class="signup username_input" id="username" name="username" required>
-                </div>
-            </section>
+        <section class="signup username_container">
+          <div class="username-container">
+            <label for="username" class="signup username_label">Username</label>
+            <input
+              
+              type="text"
+              class="signup username_input"
+              id="username"
+              name="username"
+              required
+            />
+          </div>
+        </section>
 
-            <section class="signup password-container">
+        <section class="signup password-container">
+          <div class="pass_container">
+            <label for="password1" class="signup password_label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="signup password_input"
+              id="password"
+              name="password1"
+              minlength="6"
+              maxlength="30"
+              required
+              oninput="validatePassword()"
+            />
+          </div>
 
-                <div class="pass_container">
-                    <label for="password1" class="signup password_label">Password</label>
-                    <input type="password" class="signup password_input" id="password1" name="password1" minlength="6"
-                        maxlength="30" required>
-                </div>
+          <div class="repass_container">
+            <label for="password2" class="signup repassword_label"
+              >Confirm password</label
+            >
+            <input
+              type="password"
+              class="signup repassword_input"
+              id="password-conf"
+              name="password2"
+              minlength="6"
+              maxlength="30"
+              oninput="validatePassword()"
+              required
+            />
+          </div>
+        </section>
 
-                <div class="repass_container">
-                    <label for="password2" class="signup repassword_label">Confirm password</label>
-                    <input type="password" class="signup repassword_input" id="password2" name="password2" minlength="6"
-                        maxlength="30" required>
-                </div>
-            </section>
+        <section class="signup reset_submit_container">
+          <div class="reset_submit-container">
+            <input type="reset" class="signup reset" placeholder="Reset" />
+            <button onclick="register()" type="submit" class="signup submit">Register</button>
+          </div>
+        </section>
 
-            <section class="signup reset_submit_container">
-                <div class="reset_submit-container">
-                    <input type="reset" class="signup reset" placeholder="Reset">
-                    <button type="submit" class="signup submit">Register</button>
-                </div>
-            </section>
-
-            <section class="signup_foter">
-                <a href="index.html">Already have an account?</a>
-            </section>
-            
-
-
-
-        </form>
+        <section class="signup_foter">
+          <a href="./login.html">Already have an account?</a>
+        </section>
+      </form>
     </div>
 
-</body>
-
+    <script src="./scripts/register.js"></script>
+  </body>
 </html>

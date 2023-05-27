@@ -18,109 +18,9 @@ body {
 }
 
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
+
+
 
 body {
     line-height: 1;
@@ -160,7 +60,7 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(image/b2.jpg);
+    background-image: url(../image/b2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -217,9 +117,10 @@ label.login_password {
     padding-bottom: 1.5%;
     font-family: 'Trispace', sans-serif;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem !;
     letter-spacing: 0.2rem;
     color: var(--color1);
+  
 }
 
 input.login_user,
@@ -233,7 +134,8 @@ input.login_password {
     background-color: rgba(255, 255, 255, 0.2);
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1vw;
+    font-size: 2vw;
+    transition: background-color 1s;
 }
 
 .my_container {
@@ -410,7 +312,7 @@ input.login_password {
 
     input.login_user,
     input.login_password {
-        font-size: 1vh;
+        font-size: 2vh;
     }
 
     .login_footer ul li a {
@@ -501,13 +403,12 @@ input.login_password {
 
 
 
-
 .page2 {
     background-color: #5f2a7e;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(image/b2.jpg);
+    background-image: url(../image/b2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -527,6 +428,7 @@ input.login_password {
     border: 6px solid rgb(95, 55, 55);
     background-color: var(--color2);
     border-radius: 1px;
+    padding: 2%;
 }
 
 .signup_massege {
@@ -631,13 +533,8 @@ input.login_password {
     opacity: 0.8;
 }
 
-.signup.fname_input:focus:invalid,
-.signup.lname_input:focus:invalid,
-.signup.email_input:focus:invalid,
-.signup.username_input:focus:invalid,
-.signup.password_input:focus:invalid,
-.signup.repassword_input:focus:invalid {
-    background-color: rgba(255, 0, 0, 0.2);
+.wrong {
+    background-color: rgba(255, 0, 0, 0.2) !important;
 }
 
 .signup.reset:hover,
